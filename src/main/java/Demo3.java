@@ -10,7 +10,6 @@ public class Demo3 implements Runnable{
     public void run() {
         for (int i = 0; i < 100; i++) {
             a++;
-//            System.out.println(Thread.currentThread().isInterrupted());
             System.out.println(a);
             Thread.currentThread().interrupt();
             System.out.println(Thread.currentThread().isInterrupted());
